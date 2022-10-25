@@ -613,8 +613,8 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
+          cwd: ./engine-binaries
           message: 'update engine binaries for flutter ${{ steps.flutter-version.outputs.semver }}'
-          add: 'engine.version.stable'
           tag: engine_${{ steps.engine-version-stable.outputs.hash }} --force
           tag_push: '--force'
   
