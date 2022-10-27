@@ -232,7 +232,7 @@ jobs:
         run: |
           cp engine.version.stable ${{ github.workspace }}/engine/src/out/build/engine.version
           pushd ${{ github.workspace }}/engine/src/third_party/dart
-          git rev-parse HEAD > ${{ github.workspace }}/engine/src/out/build/engine.version/dart-sdk.version
+          git rev-parse HEAD > ${{ github.workspace }}/engine/src/out/build/dart-sdk.version
           popd
      
       - name: Upload artifacts (with gen_snapshot)
