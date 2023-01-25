@@ -178,14 +178,14 @@ jobs:
           # Use -mcpu=cortex-a72+nocrypto -mtune=cortex-a72
           - artifact-name: pi4
             cpu: arm
-            arm-cpu: cortex-a72+nocrypto
-            arm-tune: cortex-a72
+            arm-cpu: cortex-a53
+            arm-tune: cortex-a53
 
           - artifact-name: pi4-64
             cpu: arm64
-            arm-cpu: cortex-a72+nocrypto
-            arm-tune: cortex-a72
           
+            arm-cpu: cortex-a53
+            arm-tune: cortex-a53
           # Use -mcpu=generic -mtune=generic for the generic builds.
           - artifact-name: armv7-generic
             cpu: arm
